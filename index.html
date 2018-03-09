@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Friends</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#ffffff;
+}
+h2{
+  font-size: 1.609em;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+html{
+    font-family:Graphik, sans-serif;
+}
+.top-container {
+  padding:.1px;
+  text-align: center;
+  color: #ffffff;
+}
+.header {
+    color:#FFFFFF;
+    padding: 5px;
+    margin: 0;
+     box-shadow: 0 6px 4px rgba(0,0,0,0.3);
+    }
+.bgimage{
+  background-image:url("https://wallpapers.walldevil.com/wallpapers/h12/preview/city-wallpaper-wallpapers-smartphone-beautiful.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 10px;
+    margin-bottom:7px;
+    background-color:#42A5F5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,50.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color:#1565C0;
+    box-shadow: 0 2px 3px rgba(0,0,0,6.12), 0 1px 4px rgba(0,0,0,4.24);
+}
+.aside {
+    background-color:#42A5F5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14.7px;
+    box-shadow: 0 1px 3px rgba(0,0,0,50.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,50.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+ .frame {
+    background-color:#42A5F5;;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,50.16),0 2px 8px 0 rgba(0,0,0,0.12)!important;
+    border-radius: 2px;
+ }
+
+
+ .flip-container{
+      perspective: 1000px;
+    }
+    .flip-container:hover .flipper, .flip-container.hover .flipper{
+      transform: translateX( -100% ) rotateY( -180deg );
+    }
+    .flip-container, .front, .back{
+      width: 100%;
+      height:300px;
+    }
+    .flipper{
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+      transform-origin: right center;
+    }
+    .front, .back{
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .front{
+      z-index: 2;
+      transform: rotateY(0deg);
+      background-image: url('https://lh3.googleusercontent.com/HzKuf-Fnha2WrVWx28rCerrT__6NLVpS623cIspsW5OJnzjNGSikZ42ooX9u-qK56R_iqZv15_qUgURIfeTcFFMgMXEnncC3v7k_R6kogTDOPnqq7We-hhZr_u4igM_uEU-XBZJn-A');
+      background-repeat:inherit;
+      background-size:cover;
+      box-shadow: 0 6px 10px 0 rgba(0,0,0,0.35);
+      border-radius: 3px;
+
+    }
+    .back {
+      transform: rotateY(180deg);
+      background-color: blue;
+      background-image: url('https://lh3.googleusercontent.com/tfpILaVvTJ0KEyz7eB-bwZd0SshO8SDDbbCjeKbj2MGQGUEP9jz3--fguCKI8Jo-dlxWI5RwmmMNkRpcAkAQIjhmNKlR1OodHEVapTYWeTgcf-6S0N9jpjaaLkkwPhh3S2TNtMwCkg ');
+      background-repeat:inherit;
+      background-size:cover;
+      box-shadow: 0 6px 10px 0 rgba(0,0,0,0.35);
+      border-radius: 3px;
+        }
+         [class*="col-"] {
+        width: 100%;
+   }     
+@media only screen and (min-width: 756px) {
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}   
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.link a {
+  color:dodgerblue;
+}
+.link a:hover{
+  color:slateblue;
+}
+.link a:visited{
+  color:blue;
+}
+.link a:active{
+  color:red;
+}
+ .buttn{
+  border: none;
+display: inline-block;
+padding: 10px 10px;
+vertical-align: middle;
+overflow: hidden;
+text-decoration: none;
+background-color: #42A5F5;
+border-radius: 5px;
+ }
+ .buttn:hover {
+  box-shadow: 0 2px 4px 0 rgba(0,0,6,50.16),0 2px 8px 0 rgba(0,8,0,0.12)!important;
+  background-color:#1565C0;
+  color: #ffffff;
+ }
+ .content{
+   padding: 0px;
+ }
+ .sticky{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: #1e88e5;
+   z-index: 3;
+   opacity: 0.9;
+ }
+ .sticky + .content {
+   padding-top: 100px;
+ }
+ .photo{
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.35);
+   transition: 0.5s;
+   width: 100%;
+   border-radius: 5px;
+   background-color:#BDBDBD;
+ }
+ .photo:hover{
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,.9);
+   background-color:#757575;
+ }
+
+</style>
+</head>
+<body>
+  <div class="bgimage">
+  <div class="top-container">
+    <h1 style="font-size: 40px">Friends</h1>
+    <p>We live our life like a legend</p>
+  </div>
+<div class="header" id ="myHeader">
+  <h1>Our Holiday</h1>
+</div>
+</div>
+<div class="row content">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://www.makemytrip.com" target="blank" style=" display: block;" >Flight</a> </li>
+    <li><a href="https://www.lonelyplanet.com" target="blank" style=" display: block;">City</a></li>
+    <li><a href="https://iceland.nordicvisitor.com" target="blank" style=" display: block;">The Island</a></li>
+    <li><a href="https://www.trivago.in/?iSemThemeId=15240&iPathId=84731&sem_keyword=best%20goa%20hotels&sem_creativeid=181139027491&sem_matchtype=e&sem_network=g&sem_device=c&sem_placement=&sem_target=&sem_adposition=1t2&sem_param1=&sem_param2=&sem_campaignid=222566691&sem_adgroupid=15746628531&sem_targetid=aud-295721641839:kwd-6820323705&sem_location=9050497&cip=91124010101&gclid=CjwKCAiAqbvTBRAPEiwANEkyCCXRrDuCxiOvjw_peB9pjr3aODxORKoBi5IWil2NMmklhb6kn2XcLRoCJMkQAvD_BwE" target="blank" style=" display: block;"> The Hotels </a> </li>
+    <li><a href="https://www.freelancer.in" target="blank" style="display: block;">Jobs </a></li>
+    <li><a href="https://www.w3schools.com" target="blank" style="display: block;">Web Development</a></li>
+    <li><a href="https://www.hackerrank.com/" target="blank" style=" display: block;">Coding Practice</a></li>
+  </ul>
+  <div class="col-3 buttn">
+  <a href="https://www.gniotgroup.edu.in/" target="_blank">GNIOT</a>
+</div>
+<div class="frame">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14030.46281403887!2d77.4957598!3d28.4609988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfc29bf57c9c17cf1!2sGreater+Noida+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1517319630840" width="100%" height="291" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <p style="color: #ffffff ; padding: 10px 6px " ><strong>Discription:</strong> The above map show the currect direction to GNIOT and button shows the GNIOT site. when you click to the button it redirect to the official site of our college GNIOT.</p>
+</div>
+</div>
+
+<div class="col-6 link">
+  <h1>Where we are?</h1>
+  <p>Currenty we are in Greater Noida and we are doing B.tech from Greater Noida Institute of Technology which is also present in Greater Noida.</p>
+  <h2>Our college</h2>
+  <p>Greater Noida Institute of Technology (GNIOT) is an engineering college in <a href="https://en.wikipedia.org/wiki/Greater_Noida">Greater Noida </a> <a href="https://en.wikipedia.org/wiki/Uttar_Pradesh" >Uttar Pradesh</a>,<a href="https://en.wikipedia.org/wiki/India"> India</a>. It has been approved by <a href="https://en.wikipedia.org/wiki/All_India_Council_for_Technical_Education"> All India Council Of Technical Education </a> and is affiliated to <a href="https://en.wikipedia.org/wiki/Dr._A.P.J._Abdul_Kalam_Technical_University">Dr. A.P.J. Abdul Kalam Technical University </a>, Lucknow. At present it offers courses at both undergraduate and post graduate levels.</p>
+  <h2>About</h2>
+  <p>This is the group of some people if anyone want to know about us please go to the GNIOT college.<br/>For searching anything click on Animation.</p>
+<div class="photo">
+  <a href='https://www.google.co.in' target="blank"><img src='https://lh3.googleusercontent.com/QHYGPckyk1iLF_Jc3DaMKrftecmczxmz6GQmIaFL2Dm6NZgEMycGug7hMCeKka6Pc7d5ptL7aKdpzCSdOM6LjWy4XXQMKgSIakdP43a4Tig3sSjjyi8Kh6IQw00WRI4sit1maBBmWA' style=" padding=10px"; width="100%" height="100%"/></a>
+</div>
+</div>
+<div class="col-3 right">
+  <div class="aside">
+    <h2>What is?</h2>
+    <p>Its a friends holiday trip</p>
+    <h2>Where?</h2>
+    <p>We are planning for the Goa trip.</p>
+    <h2>Friends?</h2>
+    <p>We are group of five friends <strong>Tabish, Pawanesh , Saurav ,Shshank , Mrityunjay</strong></p>
+    <h2>One View</h2>
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    <div class="flipper">
+    <div class="front">
+    </div>
+    <div class="back">
+    </div>
+  </div>
+</div>
+    <h2>Planning</h2>
+    <p>We are planning for a trip since last 3 year.</p>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <p>Lets party boyz...</p>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
